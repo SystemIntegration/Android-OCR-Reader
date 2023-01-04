@@ -20,7 +20,7 @@
         android:theme="@style/Theme.DVCamera2Txt"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.bmv.ocrdemo.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
