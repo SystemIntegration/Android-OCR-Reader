@@ -1,4 +1,4 @@
-package com.om.dvcamera2txt;
+package com.bmv.ocrdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;

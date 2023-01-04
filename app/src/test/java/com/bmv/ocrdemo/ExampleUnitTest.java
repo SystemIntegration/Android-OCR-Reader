@@ -1,4 +1,4 @@
-package com.om.dvcamera2txt;
+package com.bmv.ocdemo;
 
 import org.junit.Test;
 
