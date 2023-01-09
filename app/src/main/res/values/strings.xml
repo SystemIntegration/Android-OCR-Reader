@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DVCamera2Txt</string>
+    <string name="app_detailpage">Detail Page</string>
+
 </resources>

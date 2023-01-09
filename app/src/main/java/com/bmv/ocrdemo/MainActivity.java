@@ -13,7 +13,9 @@ import android.util.Log;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.ImageButton;
+import android.widget.QuickContactBadge;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private final int CAMERA_TIME = 10000;
     private List<String> profile_data = new ArrayList<String>();
     private Handler handler = new Handler();
-
-    ImageButton imgcaptbtn,gellryimgbtn;
+    ImageButton imgcaptbtn, gellryimgbtn;
 
     @Override
     public void onRequestPermissionsResult(int requestCode,
@@ -81,8 +82,10 @@ public class MainActivity extends AppCompatActivity {
         cameraView = (SurfaceView) findViewById(R.id.surface_view);
         textView = (TextView) findViewById(R.id.text_view);
 
-        imgcaptbtn = (ImageButton)findViewById(R.id.imgcaptbtn);
-        gellryimgbtn = (ImageButton)findViewById(R.id.gellryimgbtn);
+        imgcaptbtn = (ImageButton) findViewById(R.id.imgcaptbtn);
+        gellryimgbtn = (ImageButton) findViewById(R.id.gellryimgbtn);
+
+
 
         TextRecognizer textRecognizer = new TextRecognizer.Builder(getApplicationContext())
                 .build();
@@ -144,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
                                 if (StringUtils.isNotBlank(capturedString)){
                                     profile_data.add(capturedString);
                                 }
+
                             }
                         });
                     }
@@ -151,32 +155,46 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+
+        imgcaptbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+/*
+                Intent intent = new Intent(MainActivity.this, DetailsPage.class);
+//                intent.putExtra(PROFILE_DATA_KEY, ""+ profile_data.get(0));
+                intent.putStringArrayListExtra(PROFILE_DATA_KEY, (ArrayList<String>) profile_data);
+                startActivity(intent);*/
+
+
+
+
+
+            }
+        });
+
+
         handler.postDelayed(new Runnable(){
             @Override
             public void run() {
 
 
-
-                Intent intent = new Intent(MainActivity.this, NextClass.class);
+                Intent intent = new Intent(MainActivity.this, DetailsPage.class);
+//                intent.putExtra(PROFILE_DATA_KEY, ""+ profile_data.get(0));
                 intent.putStringArrayListExtra(PROFILE_DATA_KEY, (ArrayList<String>) profile_data);
-                //  startActivity(intent);
-
-
+                startActivity(intent);
                 Bundle bundle = new Bundle();
-                bundle.putStringArrayList(PROFILE_DATA_KEY,  (ArrayList<String>) profile_data);
-                Toast.makeText(MainActivity.this,"Data.."+profile_data,Toast.LENGTH_LONG).show();
+//                bundle.putStringArrayList(PROFILE_DATA_KEY,  (ArrayList<String>) profile_data);
+//                        Toast.makeText(MainActivity.this,"Data.."+profile_data,Toast.LENGTH_LONG).show();
 //                bundle.setArguments(bundle);
-
                 //ProfileCreatorFragment ProfileListAct = new ProfileCreatorFragment();
 //                ProfileListAct.setArguments(bundle);
-
-
-              //s  Utils.SetFragment(ProfileListAct,MainActivity.this , "ProfileCreator");
+                //s  Utils.SetFragment(ProfileListAct,MainActivity.this , "ProfileCreator");
 
 
 //                finish();
             }
         }, CAMERA_TIME);
+
     }
 
     @Override
