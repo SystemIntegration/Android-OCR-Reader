@@ -8,7 +8,7 @@ Read it and further you will manage that String.
 
 ## Installation
  Download OCR Source code from the given link
- ssh://git@192.168.0.106:28039/github-demo/mobile/android-ocr-reader.git
+ Clone the repository
  - Open it with Android Studio.
  - build gradle file and make app installable into device.
  - Connect real device with Android Studio via USB or as you convinent.
