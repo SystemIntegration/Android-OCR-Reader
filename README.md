@@ -3,7 +3,7 @@
 # OCR app for Camera to  Text  convert 
 A OCR project which helps you to take picture using camera and read text form the picture taken by the camera.
 Here you first open the Camera and keep it on books page or any other text related picture and take Photo off it.
-Based on taken Photo by camera OCR will read the books text or image capure text and will return it' String to App Textview to
+Based on taken Photo by camera OCR will read the books text or image capture text and will return it' String to App Textview to
 Read it and further you will manage that String.
 
 ## Installation
