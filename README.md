@@ -11,7 +11,7 @@ Read it and further you will manage that String.
  - Clone the repository
  - Open it with Android Studio.
  - build gradle file and make app installable into device.
- - Connect real device with Android Studio via USB or as you convinent.
+ - Connect real device with Android Studio via USB or as you convenient.
  - Make sure Device have enable camera.
  - Install latest app using android studio by press "Run app" install button.
      
@@ -19,7 +19,7 @@ Read it and further you will manage that String.
 - Via Android Studio, after Open project.
 - build gradle.
 - click on "Run app" and install apk to device.
-- allow needed permission for Camera and Externl storage regarding permission as need it to use.
+- allow needed permission for Camera and External storage regarding permission as need it to use.
 
 ## RunApp
 - After install App on device allow needed permission
