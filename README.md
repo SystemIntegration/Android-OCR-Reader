@@ -1,13 +1,12 @@
 # Camera OCR 1.0.0
 
 # OCR app for Camera to  Text  convert 
-A OCR project which helps you to take picture using camera and read text form the picture taken by the camera.
-Here you first open the Camera and keep it on books page or any other text related picture and take Photo off it.
-Based on taken Photo by camera OCR will read the books text or image capure text and will return it' String to App Textview to
-Read it and further you will manage that String.
+
+```sh
+A OCR project helps you to get the text for any picture using camera.
+```
 
 ## Installation
-
  - Clone the repository
  - Open it with Android Studio.
  - build gradle file and make app installable into device.
@@ -17,9 +16,9 @@ Read it and further you will manage that String.
      
 ## Deployment
 - Via Android Studio, after Open project.
-- build gradle.
-- click on "Run app" and install apk to device.
-- allow needed permission for Camera and Externl storage regarding permission as need it to use.
+- Build gradle.
+- Click on "Run app" and install apk to device.
+- Allow needed permission for Camera and Externl storage regarding permission as need it to use.
 
 ## RunApp
 - After install App on device allow needed permission
