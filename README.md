@@ -7,8 +7,8 @@ Based on taken Photo by camera OCR will read the books text or image capure text
 Read it and further you will manage that String.
 
 ## Installation
- Download OCR Source code from the given link
- Clone the repository
+
+ - Clone the repository
  - Open it with Android Studio.
  - build gradle file and make app installable into device.
  - Connect real device with Android Studio via USB or as you convinent.
